@@ -1,11 +1,11 @@
 import React from 'react';
-import img1 from 'public/assets/img1.jpg';
 import './HeroSection.css';
-// import img2 from 'src/assets/76b69a4a-fa1e-43f7-be8b-6c2aa7d2c018.jpg';
-// import img3 from 'src/assets/aebf5ef0-8a27-468e-8c9d-84d2e756b22f.jpg';
-// import img4 from 'src/assets/da5edcd4-7840-4c2b-a74d-643185bf372d.jpg';
+import img1 from './src/assets/img1.jpg';
+ import img2 from './src/assets/img2.jpg';
+ import img3 from './src/assets/img3.jpg';
+ import img4 from './src/assets/img4.jpg';
 
-// const HeroSection = () => {
+ const HeroSection = () => {
   return (
     <div className="container-fluid w-100 h-75 ">
 
@@ -15,11 +15,10 @@ import './HeroSection.css';
             <h1 className="banner-heading">Home Maintenance Made Easy!!</h1>
             <p className="banner-details" >Connecting customers and technicians for quick, safe, and affordable bookings.</p>
                 <button className='my_button'>Book Now</button>
-                <img src={img1.jpg} alt="" />     
         
         </div>
         <div className="cl-right">
-          {/* <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <ol className="carousel-indicators">
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -47,12 +46,13 @@ import './HeroSection.css';
             <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true"></span>
               <span className="sr-only">Next</span>
-            </a>*/}
+            </a>
                       </div>
+                </div>
                   </section>
                 </div> 
             
-              );
+  )
             };
             
             export default HeroSection;

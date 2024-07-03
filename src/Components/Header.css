@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Parisienne&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&display=swap");
+
+*{
+  font-family: Poppins;
+}
+
+
+
+.navbar {
+    background-color: white;
+    height:auto;
+}
+  
+  .navbar-brand {
+    color:black !important;
+  }
+  
+  .nav-link {
+    color: black !important;
+  }
+  
+  .nav-link:hover {
+    color: #ddd !important;
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  

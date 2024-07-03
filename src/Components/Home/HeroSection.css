@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Parisienne&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&display=swap");
+
+* {
+    font-family: Poppins;
+}
+
+
+.line{
+background-color: #F6F6F6;
+
+}
+.banner-heading{
+    font-size: 58px;
+    font-weight:700;
+    font-family: Poppins;
+    color: #0F52BA;
+}
+.my_button{
+    background-color:  #0F52BA;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+}
+.my_button:hover{
+    opacity: 0.9;
+    background-color: #0F52BA;
+}

@@ -26,3 +26,11 @@ background-color: #F6F6F6;
     opacity: 0.9;
     background-color: #0F52BA;
 }
+
+
+.carousel-item img{
+    border-top-left-radius: 60px 50%;
+    border-bottom-left-radius: 60px 50%;
+    height: 500px;
+    max-width: 50vw;
+}

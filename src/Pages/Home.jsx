@@ -1,12 +1,11 @@
 import React from 'react'
-import HeroSection from '../Components/Home/HeroSection'
-import img2 from '/assets/img2.jpg'
-
+ import HeroSection from '../Components/Home/HeroSection'
+ import Services from './Services'
 const Home = () => {
   return (
     <div>
-      <HeroSection /> 
-      <img src={img2} alt="" />
+      <HeroSection/>
+    <Services/>
     </div>
   )
 }

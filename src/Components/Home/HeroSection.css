@@ -4,33 +4,74 @@
     font-family: Poppins;
 }
 
-
-.line{
-background-color: #F6F6F6;
-
+.line {
+    background-color: #F6F6F6;
 }
-.banner-heading{
+
+.banner-heading {
     font-size: 58px;
-    font-weight:700;
+    font-weight: 700;
     font-family: Poppins;
     color: #0F52BA;
 }
-.my_button{
-    background-color:  #0F52BA;
+
+.my_button {
+    background-color: #0F52BA;
     padding: 11px 16px;
     border: none;
     border-radius: 50px;
     font-size: 14px;
+    text-decoration: none;
 }
-.my_button:hover{
+
+.my_button:hover {
     opacity: 0.9;
     background-color: #0F52BA;
 }
 
-
-.carousel-item img{
+.carousel-item img {
     border-top-left-radius: 60px 50%;
     border-bottom-left-radius: 60px 50%;
-    height: 500px;
-    max-width: 50vw;
+    width: 100%;
+    height: auto;
+}
+
+/* HeroSection.css */
+
+.container-fluid {
+    padding: 0;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cl-left, .cl-right {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cl-left {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cl-right {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-inner {
+    width: 100%; /* Ensure the carousel takes full width of the cl-right div */
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure images take full width of their parent */
+    height: auto; /* Maintain aspect ratio */
 }

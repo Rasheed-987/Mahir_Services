@@ -1,5 +1,13 @@
 import React from 'react'
 import ServiceList from './ServicesList'
+import img1 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img1.png';
+import img2 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img2.png';
+import img3 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img3.png';
+import img4 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img4.png';
+import img5 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img5.png';
+import img6 from '../../assets/Handyman Services in Pakistan _ Handyman near me _ Mahir Company/img6.png';
+
+
 const handyman = () => {
   const handymanServices = [
     {
@@ -8,7 +16,7 @@ const handyman = () => {
       price: "Rs:650",
       rating: 4.2,
       action: "Add +",
-      image: "/path/to/curtain-rod-installation.jpg"
+      image: img1
     },
     {
       name: "Art Hanging",
@@ -16,7 +24,7 @@ const handyman = () => {
       price: "Rs:400",
       rating: 5.0,
       action: "Add +",
-      image: "/path/to/art-hanging.jpg"
+      image: img2
     },
     {
       name: "Mirror Hanging",
@@ -24,7 +32,7 @@ const handyman = () => {
       price: "Rs:500",
       rating: 4.5,
       action: "Add +",
-      image: "/path/to/mirror-hanging.jpg"
+      image: img3
     },
     {
       name: "Picture Hanging",
@@ -32,7 +40,7 @@ const handyman = () => {
       price: "Rs:400",
       rating: 5.0,
       action: "Add +",
-      image: "/path/to/picture-hanging.jpg"
+      image: img4
     },
     {
       name: "Shelf Hanging",
@@ -40,15 +48,8 @@ const handyman = () => {
       price: "Rs:650",
       rating: 5.0,
       action: "Add +",
-      image: "/path/to/shelf-hanging.jpg"
-    },
-    {
-      name: "Room Clock Hanging",
-      description: "Per Clock",
-      price: "Rs:600",
-      rating: 4.2,
-      action: "Add +",
-      image: "/path/to/room-clock-hanging.jpg"
+      image: img5
+
     },
     {
       name: "LED TV or LCD Mounting",
@@ -56,15 +57,7 @@ const handyman = () => {
       price: "Rs:1600",
       rating: 4.8,
       action: "Add +",
-      image: "/path/to/led-tv-mounting.jpg"
-    },
-    {
-      name: "LED TV or LCD Dismounting",
-      description: "Fixed Charges",
-      price: "Rs:650",
-      rating: 4.8,
-      action: "Add +",
-      image: "/path/to/led-tv-dismounting.jpg"
+      image: img6
     }
   ];
   
@@ -72,7 +65,7 @@ const handyman = () => {
  
   return (
 
-<div className="Ac d-flex flex-row">
+<div className="Ac">
       <h1>HandyMan Services</h1>
       <ServiceList services={handymanServices} />
     </div>  

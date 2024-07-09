@@ -4,7 +4,7 @@ import ServiceCard from './Ui/Card';
 
 const ServiceList = ({ services }) => {
   return (
-    <div className="services-list">
+    <div className="services-list d-flex flex-wrap">
       {services.map((service, index) => (
         <ServiceCard 
           key={index}

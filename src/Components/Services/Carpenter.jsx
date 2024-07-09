@@ -1,23 +1,28 @@
 import React from 'react'
 import ServiceList from './ServicesList'
+import img1 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img1.png';
+import img2 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img2.png';
+import img3 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img3.png';
+import img4 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img4.png';
+import img5 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img5.png';
+import img6 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img6.png';
+import img7 from '../../assets/Carpenter Services _ Carpenter Services in Pakistan _ Mahir Company/img7.png';
+
+
+
+
 const carpenter = () => {
 
   const carpenterServices = [
-    {
-      name: "Wardrobe Repairing",
-      description: "Visit & Inspection Charges",
-      price: "Rs:500",
-      rating: 4.3,
-      action: "Add +",
-      image: "/path/to/wardrobe-repairing.jpg"
-    },
+  
     {
       name: "Door Installation",
       description: "Starting From",
       price: "Rs:1500",
       rating: 4.3,
       action: "Add +",
-      image: "/path/to/door-installation.jpg"
+      image: img1
+
     },
     {
       name: "Door Repairing",
@@ -25,7 +30,7 @@ const carpenter = () => {
       price: "Rs:500",
       rating: 4.2,
       action: "Add +",
-      image: "/path/to/door-repairing.jpg"
+      image: img2
     },
     {
       name: "Carpenter Work",
@@ -33,7 +38,7 @@ const carpenter = () => {
       price: "Rs:500",
       rating: 4.3,
       action: "Add +",
-      image: "/path/to/carpenter-work.jpg"
+      image: img3
     },
     {
       name: "Drawer Repairing",
@@ -41,7 +46,7 @@ const carpenter = () => {
       price: "Rs:500",
       rating: 4.6,
       action: "Add +",
-      image: "/path/to/drawer-repairing.jpg"
+      image: img4
     },
     {
       name: "Furniture Repairing",
@@ -49,7 +54,7 @@ const carpenter = () => {
       price: "Rs:500",
       rating: 4.6,
       action: "Add +",
-      image: "/path/to/furniture-repairing.jpg"
+      image: img5
     },
     {
       name: "Room Door Lock installation",
@@ -57,7 +62,7 @@ const carpenter = () => {
       price: "Rs:1200",
       rating: 4.8,
       action: "Add +",
-      image: "/path/to/room-door-lock-installation.jpg"
+      image: img6
     },
     {
       name: "Drawer Lock installation",
@@ -65,15 +70,7 @@ const carpenter = () => {
       price: "Rs:500",
       rating: 4,
       action: "Add +",
-      image: "/path/to/drawer-lock-installation.jpg"
-    },
-    {
-      name: "Catcher Replacement",
-      description: "Per Catcher",
-      price: "Rs:500",
-      rating: 5,
-      action: "Add +",
-      image: "/path/to/catcher-replacement.jpg"
+      image: img7
     }
   ];
   

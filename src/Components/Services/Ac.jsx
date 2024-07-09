@@ -1,6 +1,11 @@
 import React from 'react'
 import ServiceList from './ServicesList';
-
+import img1 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img1.png';
+import img2 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img2.png';
+import img3 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img3.png';
+import img4 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img4.png';
+import img5 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img5.png';
+import img6 from '../../assets/AC Services _ AC Repairing _ AC Installation _ Mahir Company/img6.png';
 const ac = () => {
 
   const acServices = [
@@ -10,7 +15,7 @@ const ac = () => {
       price: "Rs:3500 Rs:2300",
       rating: 4.3,
       action: "Add +",
-      image: "/path/to/ac-general-service.jpg"
+      image: img1
     },
     {
       name: "AC Installation",
@@ -18,7 +23,7 @@ const ac = () => {
       price: "Rs:3500 Rs:2800",
       rating: 4.4,
       action: "Add +",
-      image: "/path/to/ac-installation.jpg"
+      image: img2
     },
     {
       name: "AC Repairing",
@@ -26,7 +31,7 @@ const ac = () => {
       price: "Rs:800",
       rating: 4.3,
       action: "Add +",
-      image: "/path/to/ac-repairing.jpg"
+      image: img3
     },
     {
       name: "AC Mounting and Dismounting",
@@ -34,7 +39,7 @@ const ac = () => {
       price: "Rs:4200 Rs:3600",
       rating: 4.6,
       action: "Add +",
-      image: "/path/to/ac-mounting-dismounting.jpg"
+      image: img4
     },
     {
       name: "AC Dismounting",
@@ -42,7 +47,7 @@ const ac = () => {
       price: "Rs:1200 Rs:1000",
       rating: 4.8,
       action: "Add +",
-      image: "/path/to/ac-dismounting.jpg"
+      image: img5
     },
     {
       name: "AC Mounting and Dismounting + AC General Service",
@@ -50,7 +55,7 @@ const ac = () => {
       price: "Rs:7500 Rs:5000",
       rating: 4.5,
       action: "Add +",
-      image: "/path/to/ac-mounting-dismounting-general-service.jpg"
+      image: img6
     }
   ];
   

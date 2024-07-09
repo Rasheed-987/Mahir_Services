@@ -1,0 +1,50 @@
+/* WhyChooseUs.css */
+.container-fluid {
+    padding: 20px;
+  }
+  
+  .line {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+  }
+  
+  .right {
+    padding: 70px 0px;
+  }
+  
+  .right h2 {
+    font-size: 2rem;
+    color: #0f52ba;
+    margin-bottom: 20px;
+  }
+  
+  .right ul {
+    list-style: none;
+    padding: 2;
+  }
+  
+  .right li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right li svg {
+    margin-right: 33px;
+    font-size: 1.5rem;
+}
+  

@@ -14,6 +14,7 @@ import  Plumber from './Components/Services/Plumber';
 import  Handyman  from './Components/Services/Handyman';
 import  Electrician from './Components/Services/Electrician';
 import  Painter from './Components/Services/Painter';
+import WhyChooseUs from './Components/Home/WhyChooseUs';
 const App = () => {
   return (
     <Router>
@@ -32,7 +33,7 @@ const App = () => {
       <Route path="/Service/Handyman" element={<Handyman/>} />
       <Route path="/Service/Electrician" element={<Electrician/>} />
       <Route path="/Service/Painter" element={<Painter/>} />
-      
+      <Route path="/WhyChooseUs" element={<WhyChooseUs/>} ></Route>
       
       
       

@@ -1,0 +1,39 @@
+.service-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .service-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .service-card h3 {
+    margin: 16px 0;
+  }
+  
+  .service-card p {
+    margin: 8px 0;
+  }
+  
+  .rating {
+    color: gold;
+  }
+  
+  .action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  

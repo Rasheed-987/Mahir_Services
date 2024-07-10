@@ -75,3 +75,23 @@
     width: 100%; /* Ensure images take full width of their parent */
     height: auto; /* Maintain aspect ratio */
 }
+@media (max-width: 767.98px) {
+    .cl-right {
+      max-width: 100%;
+      padding: 0;
+    
+    }
+  
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    
+    }
+
+    .carousel-item img {
+    border-radius: 0 !important;
+        width: 100%;
+        height: auto;
+    }
+
+  }

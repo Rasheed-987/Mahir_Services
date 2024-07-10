@@ -1,21 +1,31 @@
-import React from 'react';
+
 import PropTypes from 'prop-types';
+
+// Ui/Card.jsx
+import React from 'react';
+import './Card.css';
 
 const ServiceCard = ({ image, name, description, price, rating, action }) => {
   return (
-    
+    <div className="bacground-image">
 
-    <div className="service-card">
-      <img src={image}  className="service-image" />
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <p>{price}</p>
-      <p>Rating: <span className="rating">{rating}</span></p>
-      <button className="action-button">{action}</button>
+    <div className="service-card d-flex flex-row">
+      <img src={image} alt={name} className="service-image" />
+      <div className="service-details d-flex  flex-column justify-content-between">
+        <div className="service-info">
+          <span className="service-name">{name}</span>
+          <span className="service-description">{description}</span>
+          <span className="service-price">{price}</span>
+          <span className="service-rating">Rating: {rating}</span>
+        </div>
+        <button className="service-action">{action}</button>
+      </div>
     </div>
-  
+    </div>
   );
 };
+
+
 
 ServiceCard.propTypes = {
   image: PropTypes.string.isRequired,

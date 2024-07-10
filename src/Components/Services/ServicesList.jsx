@@ -1,6 +1,7 @@
 import React from 'react';
 import './Ui/Card.css';
 import ServiceCard from './Ui/Card';
+import  './ServicesList.css';
 
 const ServiceList = ({ services }) => {
   return (

@@ -91,7 +91,7 @@ const carpenter = () => {
 
   return (
     <div>
-    <div className="Carpenter">
+    <div className="Carpenter ">
       <ServiceList services={carpenterServices} />
       </div>   
     </div>

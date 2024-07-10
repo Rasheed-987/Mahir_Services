@@ -10,20 +10,20 @@ const HeroSection = () => {
   return (
     <div className="container-fluid w-100 h-75 p-0">
       <section className="line d-flex flex-row flex-wrap">
-        <div className="cl-left col-md-6 col-12 m-0 p-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="cl-left col-md-6 col-12 m-0 p-3 d-flex flex-column justify-content-center d-none d-md-block align-items-center">
           <h1 className="banner-heading">Home Maintenance Made Easy!!</h1>
           <p className="banner-details">
             Connecting customers and technicians for quick, safe, and affordable bookings.
           </p>
-          <div className='d-flex justify-content-md-start justify-content-center'>
+          <div className='d-flex justify-content-center  mt-5 '>
             <Link to="/Services" className="my_button btn btn-primary" style={{ color: 'white' }}>
               Book Now
             </Link>
           </div>
         </div>
-        <div className="cl-right col-md-6 col-12 m-0 p-3">
+        <div className="cl-right  m-0 p-3">
           <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-            <ol className="carousel-indicators">
+            <ol className="carousel-indicators d-none">
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
@@ -44,7 +44,15 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+          <div className='d-flex justify-content-center  mt-5 '>
+            <Link to="/Services" className="my_button btn d-md-none btn-primary" style={{ color: 'white' }}>
+              Book Now
+            </Link>
+          </div>
         </div>
+        
+
+
       </section>
     </div>
   );

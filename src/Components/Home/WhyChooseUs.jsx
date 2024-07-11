@@ -8,19 +8,19 @@ const WhyChooseUs = () => {
   return (
     <div className="container-fluid my-5">
       <div className='line d-flex'>
-        <div className='left w-50 my-4'>
+        <div className='left my-4'>
           <img src={img5} alt="Double iPhone" className="responsive-image" />
         </div>
-        <div className="right w-50">
+        <div className="right">
           <h2>Why Choose Us</h2>
           <ul>
-            <li><FontAwesomeIcon icon={faCheckSquare} /> Connects you to <strong>Verified and Trained Technicians</strong>.</li>
-            <li><FontAwesomeIcon icon={faClock} /> <strong>Saves Your Time</strong> through an easy and efficient booking process.</li>
-            <li><FontAwesomeIcon icon={faHeadset} /> Offers <strong>Impeccable Customer Support</strong>.</li>
-            <li><FontAwesomeIcon icon={faDollarSign} /> Ensures <strong>Cost-effectiveness</strong>.</li>
-            <li><FontAwesomeIcon icon={faShieldAlt} /> Provides   <strong>  High-quality, Reliability, and Safety</strong>.</li>
-            <li><FontAwesomeIcon icon={faTruck} /> Promises <strong>Doorstep Services</strong>, saves travelling costs.</li>
-            <li><FontAwesomeIcon icon={faHandshake} /> Guarantees <strong>Secure Transactions</strong>.</li>
+            <li><FontAwesomeIcon icon={faCheckSquare} className='fa-icons' /> <h5>Connects you to Verified and Trained Technicians.</h5></li>
+            <li><FontAwesomeIcon icon={faClock} className='fa-icons' /> <h5>Saves Your Time through an easy and efficient booking process.</h5></li>
+            <li><FontAwesomeIcon icon={faHeadset} className='fa-icons' /> <h5>Offers Impeccable Customer Support.</h5></li>
+            <li><FontAwesomeIcon icon={faDollarSign} className='fa-icons' /> <h5>Ensures Cost-effectiveness.</h5></li>
+            <li><FontAwesomeIcon icon={faShieldAlt} className='fa-icons' /> <h5>Provides High-quality, Reliability, and Safety.</h5></li>
+            <li><FontAwesomeIcon icon={faTruck} className='fa-icons' /> <h5>Promises Doorstep Services, saves travelling costs.</h5></li>
+            <li><FontAwesomeIcon icon={faHandshake} className='fa-icons' /> <h5>Guarantees Secure Transactions.</h5></li>
           </ul>
         </div>
       </div>

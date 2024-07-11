@@ -2,7 +2,9 @@
 .service-card {
   display: flex;
   flex-direction: row;
-  max-width: 23rem;
+  width: 23rem;
+ height: 190px;
+ 
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   margin: 10px;
@@ -10,12 +12,12 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 
-
+  object-fit: cover;
 }
 
 .bacground-image{
 background-color: #F8F9FA;
-height: 
+
 }
 
 
@@ -41,13 +43,13 @@ height:
 .service-info {
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
   align-items: flex-start;
 }
 
 .service-name {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 5px 0;
+  font-size: 17.6;
+  margin: 3px 0;
 }
 
 .service-description {
@@ -81,4 +83,18 @@ height:
 
 .service-action:hover {
   background-color: #0056b3;
+}
+
+
+.service-description,
+.service-price,
+.service-rating {
+  display: block; /* Ensure each element is on its own line */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+.button-info{
+  display: flex;
+  justify-content: space-between;
 }

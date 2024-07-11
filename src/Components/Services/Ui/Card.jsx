@@ -16,9 +16,12 @@ const ServiceCard = ({ image, name, description, price, rating, action }) => {
           <span className="service-name">{name}</span>
           <span className="service-description">{description}</span>
           <span className="service-price">{price}</span>
-          <span className="service-rating">Rating: {rating}</span>
         </div>
+        <div className="button-info">
+
+          <span className="service-rating">Rating: {rating}</span>
         <button className="service-action">{action}</button>
+        </div>
       </div>
     </div>
     </div>

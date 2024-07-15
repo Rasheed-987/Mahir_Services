@@ -1,0 +1,17 @@
+.container{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+}

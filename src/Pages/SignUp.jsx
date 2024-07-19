@@ -3,24 +3,23 @@ import { useState } from 'react';
 
 const SignUp = () => {
 
-  const [userDetails, setUserDetails] = useState({
-    name: '',
-    email: '',
-    password: ''
-  });
+ const [name,setName]=useState('');
+ const [email,setEmail]=useState('');
+  const [password,setPassword]=useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const userDetails = {
+      name: name,
+      email: email,
+      password: password}
+
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+
+  console.log(userDetails);
+ 
   
-    localStorage.setItem('name', userDetails.name);
-    localStorage.setItem('email', userDetails.email);
-    localStorage.setItem('password', userDetails.password);
-  
-    setUserDetails({
-      name: '',
-      email: '',
-      password: ''
-    });
   };
 
   return (
@@ -35,8 +34,8 @@ const SignUp = () => {
                   className="form-control"
                   id="name"
                   placeholder="Enter your name"
-                  value={userDetails.name}
-                  onChange={(e) => setUserDetails({ ...userDetails, name: e.target.value })}
+                  
+                  onChange={(e) => setName(e.target.value )}
                 />
               </div>
               <div className="form-group">
@@ -46,8 +45,7 @@ const SignUp = () => {
                   className="form-control"
                   id="email"
                   placeholder="Enter your email"
-                  value={userDetails.email}
-                  onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })}
+                  onChange={(e) => setEmail( e.target.value )}
                   />
                   </div>
               <div className="form-group">
@@ -56,8 +54,7 @@ const SignUp = () => {
                   className="form-control"
                   id="password"
                   placeholder="Enter your password"
-                  value={userDetails.password}
-                  onChange={(e) => setUserDetails({ ...userDetails, password: e.target.value })}
+                  onChange={(e) => setPassword(  e.target.value )}
                   />
               </div>
               <button type="submit" className="btn btn-primary">

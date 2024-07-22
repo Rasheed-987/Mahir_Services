@@ -15,17 +15,29 @@ import  Handyman  from './Components/Services/Handyman';
 import  Electrician from './Components/Services/Electrician';
 import  Painter from './Components/Services/Painter';
 import WhyChooseUs from './Components/Home/WhyChooseUs';
+import {useState } from 'react';
 const App = () => {
+  const [user,setUser]=useState('')
+  
+
+
+function onLogout(){
+  localStorage.removeItem('userDetails');
+  setUser('');
+}
+
   return (
     <Router>
-      <Header />
+  
+      <Header user={user} onLogout={onLogout} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Home/>} ></Route>
+
         <Route path="/About" element={<About />} />
         <Route  path="/Services" element={<Services/>} />
           
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn setUser={setUser} />} />
   
       <Route path="/Service/Ac" element={<Ac/>} />
       <Route path="/Service/Carpenter" element={<Carpenter/>} />
@@ -33,15 +45,17 @@ const App = () => {
       <Route path="/Service/Handyman" element={<Handyman/>} />
       <Route path="/Service/Electrician" element={<Electrician/>} />
       <Route path="/Service/Painter" element={<Painter/>} />
-      <Route path="/WhyChooseUs" element={<WhyChooseUs/>} ></Route>
-      
-      
-      
-      
-      
-      
+      <Route path="/WhyChooseUs" element={<WhyChooseUs/>} />
       </Routes>
-    </Router>
+      
+      </Router>
+      
+      
+      
+      
+      
+      
+  
   );
 };
 

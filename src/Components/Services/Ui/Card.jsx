@@ -1,11 +1,11 @@
 
 import PropTypes from 'prop-types';
 
-// Ui/Card.jsx
 import React from 'react';
 import './Card.css';
 
-const ServiceCard = ({ image, name, description, price, rating, action }) => {
+const ServiceCard = ({ image, name, description, price,handleDecrement,handleIncrement,count }) => {
+
   return (
     <div className="bacground-image">
 
@@ -19,8 +19,11 @@ const ServiceCard = ({ image, name, description, price, rating, action }) => {
         </div>
         <div className="button-info">
 
-          <span className="service-rating">Rating: {rating}</span>
-        <button className="service-action">{action}</button>
+        <div className="counter-container">
+      <button className="counter-button" onClick={handleDecrement}>-</button>
+      <span className="counter-value">{count}</span>
+      <button className="counter-button" onClick={handleIncrement}>+</button>
+    </div>
         </div>
       </div>
     </div>
@@ -37,6 +40,7 @@ ServiceCard.propTypes = {
   price: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
   action: PropTypes.string.isRequired,
+
 };
 
 export default ServiceCard;

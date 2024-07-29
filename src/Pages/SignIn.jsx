@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './SignUp.css'
+import './SignUp.css';
+
 export default function SignIn({ setUser }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,30 +11,26 @@ export default function SignIn({ setUser }) {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    const storedDetails = JSON.parse(localStorage.getItem('users'));
-          
-    let User=storedDetails.find(user=> user.email==email && user.password==password);
-
-    
-    if(User)
-    {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const User = users.find(u => u.email === email);
+console.log(User);
+    if (email.length === 0) {
+      setErrorMessage('Please enter Email');
+    } else if (password.length === 0) {
+      setErrorMessage('Please enter Password');
+    } else if (User && User.password === password) {
       console.log('Access granted');
       setUser(User);
-      setErrorMessage('');
+      localStorage.setItem('LogInUser', JSON.stringify(User));
       navigate('/');
-        localStorage.setItem('LogInUser',JSON.stringify(User));      
+      setErrorMessage('');
+    } else if (User && User.password !== password) {
+      setErrorMessage('Invalid Password');
+    } else if (!User) {
+      setErrorMessage('Invalid Email or Password');
     }
-else{
-
-  if(storedDetails.some(user=>user.email!=email)){
-    setErrorMessage('Invalid Email or Password');
-  }
-  else{
-    setErrorMessage('Invalid Password');
-  }
-}    
   };
-  
+
   return (
     <div className="d-flex align-items-center justify-content-center" style={{ height: '100vh', backgroundColor: '#f5f5f5' }}>
       <form onSubmit={handleSignIn} className="p-4 rounded shadow-sm bg-white" style={{ width: '300px' }}>
@@ -48,7 +44,6 @@ else{
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
           />
         </div>
         <div className="mb-3">
@@ -60,7 +55,6 @@ else{
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
           />
         </div>
         <button type="submit" className="btn btn-primary w-100">Sign In</button>

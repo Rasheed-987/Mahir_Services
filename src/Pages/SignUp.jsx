@@ -8,7 +8,7 @@ const SignUp = () => {
  const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
   const navigate=useNavigate('');
-
+// const [Service,setServices]=useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,8 +24,12 @@ const SignUp = () => {
     localStorage.setItem('users', JSON.stringify(users));
   console.log(users);
   navigate('/signin');
-  
   };
+
+  const handleClick = () => {
+    navigate('/ServicesProvider')
+  }
+
 
   return (
     
@@ -65,6 +69,10 @@ const SignUp = () => {
               <button type="submit" className="btn btn-primary">
                 Sign Up
               </button>
+              <div  >
+              <a  className='custom' onClick={handleClick} >Want to become Service Provider</a>
+              </div>
+
         </div>      
       </form>
     </div>

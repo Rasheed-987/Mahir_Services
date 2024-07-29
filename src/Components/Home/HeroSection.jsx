@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <div className="container-fluid w-100 h-75 p-0">
+    <div className="container-fluid w-100 h-50 p-0">
       <section className="line d-flex flex-row flex-wrap">
         <div className="cl-left col-md-6 col-12 m-0 p-3 d-flex flex-column justify-content-center d-none d-md-block align-items-center">
           <h1 className="banner-heading">Home Maintenance Made Easy!!</h1>
@@ -21,7 +21,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
-        <div className="cl-right  m-0 p-3">
+        <div className="cl-right   p-3">
           <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <ol className="carousel-indicators d-none">
               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>

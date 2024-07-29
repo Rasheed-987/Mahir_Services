@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SignUp.css'
@@ -11,23 +12,27 @@ export default function SignIn({ setUser }) {
   const handleSignIn = (e) => {
     e.preventDefault();
     const storedDetails = JSON.parse(localStorage.getItem('users'));
-    if (storedDetails && storedDetails.email === email && storedDetails.password === password) {
+          
+    let User=storedDetails.find(user=> user.email==email && user.password==password);
+
+    
+    if(User)
+    {
       console.log('Access granted');
-      setUser(storedDetails);
+      setUser(User);
       setErrorMessage('');
-      navigate('/'); // Navigate to home page after successful sign-in
-    } 
-    else if(storedDetails.email !== email){
-      setErrorMessage('Invalid Email');
+      navigate('/');
+        localStorage.setItem('LogInUser',JSON.stringify(User));      
     }
-    else if(storedDetails.password!==password){
-      setErrorMessage('Invalid Password');
-    }
-    else{
-      setErrorMessage('Invalid Both Credentials');
-    }
-    console.log(storedDetails.email);
-    console.log(storedDetails);
+else{
+
+  if(storedDetails.some(user=>user.email!=email)){
+    setErrorMessage('Invalid Email or Password');
+  }
+  else{
+    setErrorMessage('Invalid Password');
+  }
+}    
   };
   
   return (

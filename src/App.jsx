@@ -15,14 +15,20 @@ import  Handyman  from './Components/Services/Handyman';
 import  Electrician from './Components/Services/Electrician';
 import  Painter from './Components/Services/Painter';
 import WhyChooseUs from './Components/Home/WhyChooseUs';
-import {useState } from 'react';
+import {useState,useEffect } from 'react';
 const App = () => {
   const [user,setUser]=useState('')
   
-
+  useEffect(()=>{
+    const user=localStorage.getItem('LogInUser');
+    if(user){
+      setUser(JSON.parse(user));
+  }
+},[]);
+  
 
 function onLogout(){
-  localStorage.removeItem('userDetails');
+  localStorage.removeItem('LogInUser');
   setUser('');
 }
 

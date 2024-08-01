@@ -76,10 +76,11 @@ const ServiceList = ({ services }) => {
         />
       ))}
     </div>
-    
-      <button className="btn btn-primary" onClick={() => navigate('/AddtoCart')}>
-        View Cart
-      </button>
+    <div className="button-container">
+        <button className="btn btn-primary" onClick={() => navigate('/AddtoCart')}>
+          View Cart
+        </button>
+      </div>
     </>
     // </div>
   );

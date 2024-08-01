@@ -1,7 +1,6 @@
 
 import PropTypes from 'prop-types';
-
-import React from 'react';
+import React  from 'react';
 import './Card.css';
 
 const ServiceCard = ({ image, name, description, price,handleDecrement,handleIncrement,count }) => {
@@ -15,7 +14,7 @@ const ServiceCard = ({ image, name, description, price,handleDecrement,handleInc
         <div className="service-info">
           <span className="service-name">{name}</span>
           <span className="service-description">{description}</span>
-          <span className="service-price">{price}</span>
+          <span className="service-price">{`Rs: ${price}` }</span>
         </div>
         <div className="button-info">
 

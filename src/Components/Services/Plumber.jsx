@@ -18,7 +18,7 @@ const plumber = () => {
     {
       name: "Mixer Tap Installation",
       description: "Per Tap",
-      price: "Rs:850",
+      price: "850",
       rating: 4.7,
       action: "Add +",
       image: img1
@@ -26,7 +26,7 @@ const plumber = () => {
     {
       name: "Single Tap Installation",
       description: "Starting From",
-      price: "Rs:750",
+      price: "750",
       rating: 4.5,
       action: "Add +",
       image: img2
@@ -35,7 +35,7 @@ const plumber = () => {
     {
       name: "Muslim Shower Replacement",
       description: "Per Muslim Shower",
-      price: "Rs:850",
+      price: "850",
       rating: 4.4,
       action: "Add +",
       image: img3
@@ -43,7 +43,7 @@ const plumber = () => {
     {
       name: "Water Motor Installation",
       description: "Vary After Inspection",
-      price: "Rs:1200",
+      price: "1200",
       rating: 4,
       action: "Add +",
       image: img4
@@ -51,7 +51,7 @@ const plumber = () => {
     {
       name: "Kitchen Leakage Repairing",
       description: "Visit and Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.6,
       action: "Add +",
       image: img5
@@ -59,7 +59,7 @@ const plumber = () => {
     {
       name: "Kitchen Drain Blockage",
       description: "Vary After Inspection",
-      price: "Rs:1000",
+      price: "1000",
       rating: 4.2,
       action: "Add +",
       image: img6
@@ -67,7 +67,7 @@ const plumber = () => {
     {
       name: "Automatic Washing Machine Installation (With Wiring)",
       description: "Vary After inspection",
-      price: "Rs:2500",
+      price: "2500",
       rating: 4.6,
       action: "Add +",
       image: img7
@@ -75,7 +75,7 @@ const plumber = () => {
     {
       name: "Water Tank Supply Issue",
       description: "Visit and Inspection Charges",
-      price: "Rs:800",
+      price: "800",
       rating: 4.3,
       action: "Add +",
       image: img8
@@ -84,7 +84,7 @@ const plumber = () => {
     {
       name: "Pipeline Water Leakage",
       description: "Visit and Inspection Charges",
-      price: "Rs:800",
+      price: "800",
       rating: 4.5,
       action: "Add +",
       image: img9
@@ -92,7 +92,7 @@ const plumber = () => {
     {
       name: "Sink Installation",
       description: "Starting From",
-      price: "Rs:1800 Rs:1500",
+      price: "1800",
       rating: 4.5,
       action: "Add +",
       image: img10

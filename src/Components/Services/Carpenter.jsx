@@ -18,7 +18,7 @@ const carpenter = () => {
     {
       name: "Door Installation",
       description: "Starting From",
-      price: "Rs:1500",
+      price: "1500",
       rating: 4.3,
       action: "Add +",
       image: img1
@@ -27,7 +27,7 @@ const carpenter = () => {
     {
       name: "Door Repairing",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.2,
       action: "Add +",
       image: img2
@@ -35,7 +35,7 @@ const carpenter = () => {
     {
       name: "Carpenter Work",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.3,
       action: "Add +",
       image: img3
@@ -43,7 +43,7 @@ const carpenter = () => {
     {
       name: "Drawer Repairing",
       description: "Vary After Inspection",
-      price: "Rs:500",
+      price: "500",
       rating: 4.6,
       action: "Add +",
       image: img4
@@ -51,7 +51,7 @@ const carpenter = () => {
     {
       name: "Furniture Repairing",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.6,
       action: "Add +",
       image: img5
@@ -59,7 +59,7 @@ const carpenter = () => {
     {
       name: "Room Door Lock installation",
       description: "Vary After inspection",
-      price: "Rs:1200",
+      price: "1200",
       rating: 4.8,
       action: "Add +",
       image: img6
@@ -67,7 +67,7 @@ const carpenter = () => {
     {
       name: "Drawer Lock installation",
       description: "Per Lock",
-      price: "Rs:500",
+      price: "500",
       rating: 4,
       action: "Add +",
       image: img7

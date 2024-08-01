@@ -12,7 +12,7 @@ const ac = () => {
     {
       name: "AC General Service",
       description: "Per AC (1 to 2.5 tons)",
-      price: "Rs:3500 Rs:2300",
+      price: "3500 ",
       rating: 4.3,
       action: "Add +",
       image: img1
@@ -20,7 +20,7 @@ const ac = () => {
     {
       name: "AC Installation",
       description: "Installation with 10 Feet pipe (1 to 2.5 tons)",
-      price: "Rs:3500 Rs:2800",
+      price: "3500",
       rating: 4.4,
       action: "Add +",
       image: img2
@@ -28,7 +28,7 @@ const ac = () => {
     {
       name: "AC Repairing",
       description: "Visit and Inspection Charges",
-      price: "Rs:800",
+      price: "800",
       rating: 4.3,
       action: "Add +",
       image: img3
@@ -36,7 +36,7 @@ const ac = () => {
     {
       name: "AC Mounting and Dismounting",
       description: "Per AC (1 to 2.5 tons)",
-      price: "Rs:4200 Rs:3600",
+      price: "4200",
       rating: 4.6,
       action: "Add +",
       image: img4
@@ -44,7 +44,7 @@ const ac = () => {
     {
       name: "AC Dismounting",
       description: "Per AC (1 to 2.5 tons)",
-      price: "Rs:1200 Rs:1000",
+      price: "1200 ",
       rating: 4.8,
       action: "Add +",
       image: img5
@@ -52,7 +52,7 @@ const ac = () => {
     {
       name: "AC Mounting and Dismounting + AC General Service",
       description: "Per AC (1 to 2.5 tons)",
-      price: "Rs:7500 Rs:5000",
+      price: "7500",
       rating: 4.5,
       action: "Add +",
       image: img6

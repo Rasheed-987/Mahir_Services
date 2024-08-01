@@ -12,7 +12,7 @@ const painter = () => {
     {
       name: "House Paint (outdoor)",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.1,
       action: "Add +",
       image: img7
@@ -20,7 +20,7 @@ const painter = () => {
     {
       name: "House Paint (indoor)",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.4,
       action: "Add +",
       image: img2
@@ -28,7 +28,7 @@ const painter = () => {
     {
       name: "Furniture Polishing",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 3.8,
       action: "Add +",
       image: img4
@@ -37,14 +37,14 @@ const painter = () => {
     {
       name: "Door Polish",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.6,
       action: "Add +",
       image: img5}
     ,{
       name: "Tables Polish",
       description: "Visit & Inspection Charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.2,
       action: "Add +",
       image: img3

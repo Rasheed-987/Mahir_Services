@@ -72,9 +72,10 @@ const SignUp = () => {
               <div  >
               <a  className='custom' onClick={handleClick} >Want to become Service Provider</a>
               </div>
-
+    
         </div>      
       </form>
+      
     </div>
   );
 }

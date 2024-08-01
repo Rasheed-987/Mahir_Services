@@ -1,0 +1,44 @@
+/* AddtoCart.css */
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-container {
+
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 40%;
+  }
+  
+  .cart-container h2 {
+    color: #333;
+  }
+  
+  .cart-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-container li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-container li:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+  }
+  

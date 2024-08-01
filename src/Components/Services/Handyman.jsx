@@ -13,7 +13,7 @@ const handyman = () => {
     {
       name: "Curtain Rod Installation",
       description: "Per Rod",
-      price: "Rs:650",
+      price: "650",
       rating: 4.2,
       action: "Add +",
       image: img1
@@ -21,7 +21,7 @@ const handyman = () => {
     {
       name: "Art Hanging",
       description: "Per Piece",
-      price: "Rs:400",
+      price: "400",
       rating: 5.0,
       action: "Add +",
       image: img2
@@ -29,7 +29,7 @@ const handyman = () => {
     {
       name: "Mirror Hanging",
       description: "Vary After Inspection",
-      price: "Rs:500",
+      price: "500",
       rating: 4.5,
       action: "Add +",
       image: img3
@@ -37,7 +37,7 @@ const handyman = () => {
     {
       name: "Picture Hanging",
       description: "Per Picture",
-      price: "Rs:400",
+      price: "400",
       rating: 5.0,
       action: "Add +",
       image: img4
@@ -45,7 +45,7 @@ const handyman = () => {
     {
       name: "Shelf Hanging",
       description: "Vary After Inspection",
-      price: "Rs:650",
+      price: "650",
       rating: 5.0,
       action: "Add +",
       image: img5
@@ -54,7 +54,7 @@ const handyman = () => {
     {
       name: "LED TV or LCD Mounting",
       description: "Vary After Inspection",
-      price: "Rs:1600",
+      price: "1600",
       rating: 4.8,
       action: "Add +",
       image: img6

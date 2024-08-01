@@ -19,7 +19,7 @@ const electrician = () => {
     {
       name: "Ceiling Fan Installation",
       description: "Per Fan",
-      price: "Rs:750",
+      price: "750",
       rating: 4.5,
       action: "Add +",
       image: img1
@@ -28,7 +28,7 @@ const electrician = () => {
     {
       name: "Switchboard Button Replacement",
       description: "Vary After Inspection",
-      price: "Rs:500",
+      price: "500",
       rating: 4.4,
       action: "Add +",
       image: img2
@@ -36,7 +36,7 @@ const electrician = () => {
     {
       name: "Pressure Motor Installation",
       description: "Visit and Inspection charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.5,
       action: "Add +",
       image: img5
@@ -44,7 +44,7 @@ const electrician = () => {
     {
       name: "Single Phase Breaker Replacement",
       description: "Starting From",
-      price: "Rs:650",
+      price: "650",
       rating: 4.6,
       action: "Add +",
       image: img6
@@ -52,7 +52,7 @@ const electrician = () => {
     {
       name: "Single Phase Distribution Box Installation",
       description: "Starting From",
-      price: "Rs:2000",
+      price: "2000",
       rating: 4.5,
       action: "Add +",
       image: img7
@@ -60,7 +60,7 @@ const electrician = () => {
     {
       name: "Manual Washing Machine Repairing",
       description: "Visit and Inspection charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.3,
       action: "Add +",
       image: img4
@@ -70,7 +70,7 @@ const electrician = () => {
     {
       name: "UPS Repairing",
       description: "Visit and Inspection charges",
-      price: "Rs:500",
+      price: "500",
       rating: 4.4,
       action: "Add +",
       image: img10
@@ -79,7 +79,7 @@ const electrician = () => {
     {
       name: "Automatic Washing Machine Repairing",
       description: "Visit and Inspection Charges",
-      price: "Rs:800",
+      price: "800",
       rating: 4.6,
       action: "Add +",
       image: img9

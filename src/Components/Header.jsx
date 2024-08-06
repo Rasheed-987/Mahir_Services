@@ -4,6 +4,7 @@ import './Header.css';
 import logo from '../assets/mahir_logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import {  faCartShopping} from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({user,onLogout}) => {
   return (
@@ -32,13 +33,23 @@ const Header = ({user,onLogout}) => {
         {
           user?(
             <>
-             <li className='nav-item'></li>
+          
+         
+            <li className='nva-item  ' id='new2'>
+            <FontAwesomeIcon icon={ faCartShopping}/>
+            <Link className="nav-link" to='/AddtoCart'  >
+            </Link>
+            
+            </li>
+
+
           <li className="nav-item" id='new'>
             <Link className="nav-link"  onClick={onLogout}>Logout</Link>
             </li>
             <li className='nva-item ' id='new1'>
             <FontAwesomeIcon icon={faUser}/>
             </li>
+            
            </>
            ):(<>
             <li className="nav-item">
